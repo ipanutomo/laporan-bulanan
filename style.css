@@ -1,0 +1,390 @@
+/* ========== RESET & BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #e9ecef;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========== WEB CONTROLS ========== */
+.web-controls {
+    background: white;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #dee2e6;
+}
+
+.web-controls h2 {
+    font-size: 1.4rem;
+    color: #2c3e66;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.web-controls h2 i {
+    color: #3b82f6;
+}
+
+.control-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.control-group label {
+    font-weight: 600;
+    color: #4b5563;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#lotSelect {
+    padding: 10px 16px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    width: 180px;
+    font-family: 'Inter', monospace;
+}
+
+#lotSelect:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+}
+
+#loadBtn {
+    background: #3b82f6;
+    color: white;
+}
+
+#loadBtn:hover {
+    background: #2563eb;
+}
+
+.print-btn {
+    background: #10b981;
+    color: white;
+}
+
+.print-btn:hover {
+    background: #059669;
+}
+
+.error-message {
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-top: 15px;
+    display: none;
+    font-size: 0.85rem;
+    border-left: 4px solid #dc2626;
+}
+
+.loading-message {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ========== REPORT AREA ========== */
+.report-container {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    min-height: 500px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 80px 20px;
+    color: #9ca3af;
+}
+
+.empty-state i {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+/* ========== STYLE LAPORAN ========== */
+.laporan {
+    padding: 25px 20px;
+    background: white;
+}
+
+/* Header Laporan */
+.header-laporan {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 12px;
+}
+
+.header-laporan h1 {
+    font-size: 1.3rem;
+    color: #1e293b;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.header-laporan h1 i {
+    color: #3b82f6;
+    font-size: 1.3rem;
+}
+
+.header-laporan .subtitle {
+    color: #5b6778;
+    font-size: 0.7rem;
+    margin-top: 5px;
+}
+
+.header-laporan .lot-badge {
+    background: #3b82f6;
+    color: white;
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* Sub Judul Tabel */
+.sub-judul {
+    margin: 20px 0 10px 0;
+    padding-left: 6px;
+    border-left: 4px solid #3b82f6;
+}
+
+.sub-judul h3 {
+    font-size: 1rem;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sub-judul h3 i {
+    color: #3b82f6;
+    font-size: 0.9rem;
+}
+
+/* ========== TABEL STYLE DENGAN WARNA HEADER ========== */
+.table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9px;
+    table-layout: auto;
+}
+
+/* WARNA HEADER TABEL - Biru Muda */
+th {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: white;
+    padding: 10px 6px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #1e40af;
+    word-break: break-word;
+}
+
+/* Efek header saat hover (hanya di web) */
+@media screen {
+    th:hover {
+        background: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
+    }
+}
+
+td {
+    padding: 6px 4px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    font-size: 8.5px;
+    word-break: break-word;
+}
+
+/* Kolom teks rata kiri */
+td:nth-child(4),
+td:nth-child(5),
+th:nth-child(4),
+th:nth-child(5) {
+    text-align: left;
+}
+
+/* Zebra stripe untuk baris tabel (web) */
+@media screen {
+    tbody tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+    
+    tbody tr:hover {
+        background-color: #e0f2fe;
+    }
+}
+
+/* Total Row */
+.total-row {
+    background: #f1f5f9;
+    font-weight: 700;
+    border-top: 2px solid #cbd5e1;
+}
+
+.total-row td {
+    font-weight: 700;
+    color: #0f172a;
+    background: #f1f5f9;
+    font-size: 8.5px;
+}
+
+.total-row td:first-child {
+    text-align: right;
+}
+
+/* Footer Laporan */
+.footer-laporan {
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 7px;
+    color: #6c757d;
+}
+
+/* ========== PRINT STYLES (HEADER REPEAT DI SETIAP HALAMAN) ========== */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .no-print {
+        display: none !important;
+    }
+    
+    .report-container {
+        box-shadow: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .laporan {
+        padding: 0.2cm;
+        width: 100%;
+    }
+    
+    @page {
+        size: A4 portrait;
+        margin: 0.7cm;
+    }
+    
+    /* PENTING: Header tabel berulang di setiap halaman */
+    thead {
+        display: table-header-group;
+    }
+    
+    /* Pastikan header tetap di setiap halaman */
+    table {
+        font-size: 7.5px !important;
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+    }
+    
+    /* Header tabel dengan warna yang tetap terlihat di cetak */
+    th {
+        background: #2563eb !important;
+        color: white !important;
+        font-size: 6.5px !important;
+        padding: 5px 3px !important;
+        border-bottom: 1px solid #1e40af !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    
+    td {
+        font-size: 7px !important;
+        padding: 4px 3px !important;
+    }
+    
+    .header-laporan h1 {
+        font-size: 1rem !important;
+    }
+    
+    .sub-judul h3 {
+        font-size: 0.85rem !important;
+    }
+    
+    /* Biarkan tabel terpotong alami antar halaman */
+    .table-wrapper {
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+        margin-bottom: 15px;
+    }
+    
+    /* Baris tabel boleh terpotong */
+    tr, td, th {
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+    }
+    
+    /* Header dan footer laporan */
+    .header-laporan,
+    .footer-laporan {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+}

@@ -99,7 +99,6 @@ function renderTabelIPL(data, lot) {
                 <td>${formatTanggal(item['Tanggal'])}</td>
                 <td>${item['Periode'] || '-'}</td>
                 <td>${item['Blok No'] || '-'}</td>
-                <td style="text-align:left">${item['Nama'] || '-'}</td>
                 <td>${formatRupiah(ipl)}</td>
                 <td>${formatRupiah(kasRt)}</td>
                 <td>${formatRupiah(takziyah)}</td>
@@ -133,7 +132,6 @@ function renderTabelIPL(data, lot) {
                         <th>Tanggal</th>
                         <th>Periode</th>
                         <th>Blok No</th>
-                        <th>Nama</th>
                         <th>IPL</th>
                         <th>Kas RT</th>
                         <th>Takziyah</th>

@@ -113,7 +113,7 @@ function renderTabelIPL(data, lot) {
     // Baris TOTAL (ditambah kolom Kas)
     rows += `
         <tr class="total-row">
-            <td colspan="3" style="text-align:right; font-weight:700">TOTAL</td>
+            <td colspan="2" style="text-align:right; font-weight:700">TOTAL</td>
             <td>${formatRupiah(totalIPL)}</td>
             <td>${formatRupiah(totalKasRT)}</td>
             <td>${formatRupiah(totalTakziyah)}</td>

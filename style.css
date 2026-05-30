@@ -150,109 +150,111 @@ button {
     background: white;
 }
 
-/* Header Laporan */
+/* Header Laporan - UKURAN LEBIH BESAR */
 .header-laporan {
     text-align: center;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #3b82f6;
-    padding-bottom: 12px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #4a6fa5;
+    padding-bottom: 15px;
 }
 
 .header-laporan h1 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color: #1e293b;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 .header-laporan h1 i {
-    color: #3b82f6;
-    font-size: 1.3rem;
+    color: #4a6fa5;
+    font-size: 1.8rem;
 }
 
 .header-laporan .subtitle {
     color: #5b6778;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     margin-top: 5px;
 }
 
 .header-laporan .lot-badge {
-    background: #3b82f6;
+    background: #4a6fa5;
     color: white;
     display: inline-block;
-    padding: 4px 16px;
+    padding: 6px 20px;
     border-radius: 30px;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     font-weight: 600;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
-/* Sub Judul Tabel */
+/* Sub Judul Tabel - UKURAN LEBIH BESAR */
 .sub-judul {
-    margin: 20px 0 10px 0;
-    padding-left: 6px;
-    border-left: 4px solid #3b82f6;
+    margin: 25px 0 15px 0;
+    padding-left: 8px;
+    border-left: 5px solid #4a6fa5;
 }
 
 .sub-judul h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #1e293b;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 .sub-judul h3 i {
-    color: #3b82f6;
-    font-size: 0.9rem;
+    color: #4a6fa5;
+    font-size: 1.1rem;
 }
 
-/* ========== TABEL STYLE DENGAN WARNA HEADER ========== */
+/* ========== TABEL STYLE - FONT LEBIH BESAR, PASTEL BIRU GELAP ========== */
 .table-wrapper {
     overflow-x: auto;
     margin-bottom: 25px;
-    border-radius: 8px;
-    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 9px;
+    font-size: 10px;
     table-layout: auto;
 }
 
-/* WARNA HEADER TABEL - Biru Muda */
+/* WARNA HEADER TABEL - PASTEL BIRU GELAP */
 th {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    background: linear-gradient(135deg, #4a6fa5 0%, #3a5a8c 100%);
     color: white;
-    padding: 10px 6px;
+    padding: 12px 8px;
     text-align: center;
     font-weight: 700;
-    font-size: 8px;
+    font-size: 11px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border-bottom: 2px solid #1e40af;
-    word-break: break-word;
+    letter-spacing: 0.8px;
+    border-bottom: 2px solid #2d4a73;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 /* Efek header saat hover (hanya di web) */
 @media screen {
     th:hover {
-        background: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
+        background: linear-gradient(135deg, #3a5a8c 0%, #2d4a73 100%);
     }
 }
 
 td {
-    padding: 6px 4px;
+    padding: 8px 6px;
     text-align: center;
     border-bottom: 1px solid #e2e8f0;
-    color: #334155;
-    font-size: 8.5px;
-    word-break: break-word;
+    color: #1a1a1a;
+    font-size: 10px;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 /* Kolom teks rata kiri */
@@ -263,29 +265,29 @@ th:nth-child(5) {
     text-align: left;
 }
 
-/* Zebra stripe untuk baris tabel (web) */
+/* Zebra stripe untuk baris tabel (web) - PASTEL BIRU SANGAT MUDA */
 @media screen {
     tbody tr:nth-child(even) {
-        background-color: #f8fafc;
+        background-color: #f0f4f9;
     }
     
     tbody tr:hover {
-        background-color: #e0f2fe;
+        background-color: #e2eaf5;
     }
 }
 
-/* Total Row */
+/* Total Row - PASTEL BIRU GELAP UNTUK BACKGROUND */
 .total-row {
-    background: #f1f5f9;
+    background: #e8eff8;
     font-weight: 700;
     border-top: 2px solid #cbd5e1;
 }
 
 .total-row td {
     font-weight: 700;
-    color: #0f172a;
-    background: #f1f5f9;
-    font-size: 8.5px;
+    color: #1a1a1a;
+    background: #e8eff8;
+    font-size: 10px;
 }
 
 .total-row td:first-child {
@@ -294,12 +296,12 @@ th:nth-child(5) {
 
 /* Footer Laporan */
 .footer-laporan {
-    margin-top: 20px;
-    padding-top: 12px;
-    border-top: 1px solid #e2e8f0;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #cbd5e1;
     display: flex;
     justify-content: space-between;
-    font-size: 7px;
+    font-size: 8px;
     color: #6c757d;
 }
 
@@ -337,35 +339,36 @@ th:nth-child(5) {
         display: table-header-group;
     }
     
-    /* Pastikan header tetap di setiap halaman */
+    /* Pastikan header tetap di setiap halaman - FONT LEBIH BESAR */
     table {
-        font-size: 7.5px !important;
+        font-size: 10px !important;
         page-break-inside: auto !important;
         break-inside: auto !important;
     }
     
-    /* Header tabel dengan warna yang tetap terlihat di cetak */
+    /* Header tabel warna pastel biru gelap tetap di cetak */
     th {
-        background: #2563eb !important;
+        background: #4a6fa5 !important;
         color: white !important;
-        font-size: 6.5px !important;
-        padding: 5px 3px !important;
-        border-bottom: 1px solid #1e40af !important;
+        font-size: 10px !important;
+        padding: 8px 5px !important;
+        border-bottom: 1px solid #2d4a73 !important;
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
     }
     
     td {
-        font-size: 7px !important;
-        padding: 4px 3px !important;
+        font-size: 9px !important;
+        padding: 6px 4px !important;
+        color: #1a1a1a !important;
     }
     
     .header-laporan h1 {
-        font-size: 1rem !important;
+        font-size: 1.4rem !important;
     }
     
     .sub-judul h3 {
-        font-size: 0.85rem !important;
+        font-size: 1rem !important;
     }
     
     /* Biarkan tabel terpotong alami antar halaman */

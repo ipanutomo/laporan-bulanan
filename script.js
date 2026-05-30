@@ -164,7 +164,7 @@ function renderTabelKasJeruk2(data) {
                 <td>${formatTanggal(item['Tanggal'])}</td>
                 <td style="text-align:left">${item['Uraian'] || '-'}</td>
                 <td>${item['Kategori'] || '-'}</td>
-                <td>${formatRupiah(item['Jumlah'])}</td>
+                <td>${item['Jumlah']}</td>
                 <td>${item['Satuan'] || '-'}</td>
                 <td>${formatRupiah(item['Pemasukan'])}</td>
                 <td>${formatRupiah(item['Pengeluaran'])}</td>

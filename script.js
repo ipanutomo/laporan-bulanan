@@ -255,7 +255,7 @@ async function loadAndPrint(doPrint = false) {
         return;
     }
     
-    if (lot < 0 || lot > 39) {
+    if (lot < 0) {
         errorDiv.style.display = 'block';
         errorDiv.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Lot harus antara 0 - 39';
         return;
